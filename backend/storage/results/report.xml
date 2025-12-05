@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="8" skipped="0" tests="8" time="1.228" timestamp="2025-12-03T20:04:39.758272+05:30" hostname="IdeaPad-Gaming-3"><testcase classname="tests.generated.test_mern-todo-app" name="test_forgot_password" time="0.328"><failure message="AssertionError: Expected 200 but got 404. Response: &lt;!DOCTYPE html&gt;&#10;  &lt;html lang=&quot;en&quot;&gt;&#10;  &lt;head&gt;&#10;  &lt;meta charset=&quot;utf-8&quot;&gt;&#10;  &lt;title&gt;Error&lt;/title&gt;&#10;  &lt;/head&gt;&#10;  &lt;body&gt;&#10;  &lt;pre&gt;Cannot POST /api/users/forgot-password&lt;/pre&gt;&#10;  &lt;/body&gt;&#10;  &lt;/html&gt;&#10;  &#10;assert 404 == 200&#10; +  where 404 = &lt;Response [404]&gt;.status_code">base_url = 'http://localhost:8001'
+
+    def test_forgot_password(base_url):
+        """
+        Test the /forgotPassword endpoint.
+        Assumes it requires an email to send a reset link.
+        """
+        # FIX: Changed URL to a standard RESTful endpoint for user actions.
+        url = f"{base_url}/api/users/forgot-password"
+        # Example payload: Assumes the API needs an email to process a password reset.
+        payload = {
+            "email": "testuser@example.com"
+        }
+        headers = {'Content-Type': 'application/json'}
+        response = requests.post(url, data=json.dumps(payload), headers=headers)
+    
+        # Assert that the request was successful (e.g., status code 200 OK).
+&gt;       assert response.status_code == 200, f"Expected 200 but got {response.status_code}. Response: {response.text}"
+E       AssertionError: Expected 200 but got 404. Response: &lt;!DOCTYPE html&gt;
+E         &lt;html lang="en"&gt;
+E         &lt;head&gt;
+E         &lt;meta charset="utf-8"&gt;
+E         &lt;title&gt;Error&lt;/title&gt;
+E         &lt;/head&gt;
+E         &lt;body&gt;
+E         &lt;pre&gt;Cannot POST /api/users/forgot-password&lt;/pre&gt;
+E         &lt;/body&gt;
+E         &lt;/html&gt;
+E         
+E       assert 404 == 200
+E        +  where 404 = &lt;Response [404]&gt;.status_code
+
+tests\generated\test_mern-todo-app.py:31: AssertionError</failure></testcase><testcase classname="tests.generated.test_mern-todo-app" name="test_reset_password" time="0.013"><failure message="AssertionError: Expected 200 but got 404. Response: &lt;!DOCTYPE html&gt;&#10;  &lt;html lang=&quot;en&quot;&gt;&#10;  &lt;head&gt;&#10;  &lt;meta charset=&quot;utf-8&quot;&gt;&#10;  &lt;title&gt;Error&lt;/title&gt;&#10;  &lt;/head&gt;&#10;  &lt;body&gt;&#10;  &lt;pre&gt;Cannot POST /api/users/reset-password&lt;/pre&gt;&#10;  &lt;/body&gt;&#10;  &lt;/html&gt;&#10;  &#10;assert 404 == 200&#10; +  where 404 = &lt;Response [404]&gt;.status_code">base_url = 'http://localhost:8001'
+
+    def test_reset_password(base_url):
+        """
+        Test the /resetPassword endpoint.
+        Assumes it requires a reset token and a new password.
+        """
+        # FIX: Changed URL to a standard RESTful endpoint for user actions.
+        url = f"{base_url}/api/users/reset-password"
+        # Example payload: Assumes a token and a new password are required.
+        payload = {
+            "reset_token": "some_valid_reset_token_from_email",
+            "new_password": "aVeryStrongNewPassword123!"
+        }
+        headers = {'Content-Type': 'application/json'}
+        response = requests.post(url, data=json.dumps(payload), headers=headers)
+    
+&gt;       assert response.status_code == 200, f"Expected 200 but got {response.status_code}. Response: {response.text}"
+E       AssertionError: Expected 200 but got 404. Response: &lt;!DOCTYPE html&gt;
+E         &lt;html lang="en"&gt;
+E         &lt;head&gt;
+E         &lt;meta charset="utf-8"&gt;
+E         &lt;title&gt;Error&lt;/title&gt;
+E         &lt;/head&gt;
+E         &lt;body&gt;
+E         &lt;pre&gt;Cannot POST /api/users/reset-password&lt;/pre&gt;
+E         &lt;/body&gt;
+E         &lt;/html&gt;
+E         
+E       assert 404 == 200
+E        +  where 404 = &lt;Response [404]&gt;.status_code
+
+tests\generated\test_mern-todo-app.py:53: AssertionError</failure></testcase><testcase classname="tests.generated.test_mern-todo-app" name="test_add_task" time="0.009"><failure message="AssertionError: Expected 201 but got 404. Response: &lt;!DOCTYPE html&gt;&#10;  &lt;html lang=&quot;en&quot;&gt;&#10;  &lt;head&gt;&#10;  &lt;meta charset=&quot;utf-8&quot;&gt;&#10;  &lt;title&gt;Error&lt;/title&gt;&#10;  &lt;/head&gt;&#10;  &lt;body&gt;&#10;  &lt;pre&gt;Cannot POST /api/tasks&lt;/pre&gt;&#10;  &lt;/body&gt;&#10;  &lt;/html&gt;&#10;  &#10;assert 404 == 201&#10; +  where 404 = &lt;Response [404]&gt;.status_code">base_url = 'http://localhost:8001'
+
+    def test_add_task(base_url):
+        """
+        Test the /addTask endpoint.
+        Assumes it requires task details like a title and description.
+        """
+        # FIX: Changed URL from RPC-style /addTask to RESTful /tasks.
+        url = f"{base_url}/api/tasks"
+        # Example payload: Assumes details for the new task are needed.
+        # An auth token might also be required in a real-world scenario.
+        payload = {
+            "title": "Buy groceries",
+            "description": "Milk, Bread, Cheese, and Eggs",
+            "user_id": 1
+        }
+        headers = {'Content-Type': 'application/json'}
+        response = requests.post(url, data=json.dumps(payload), headers=headers)
+    
+        # A successful creation is often indicated by a 201 status code.
+        # We will check for 201, but 200 is also a common success response.
+&gt;       assert response.status_code == 201, f"Expected 201 but got {response.status_code}. Response: {response.text}"
+E       AssertionError: Expected 201 but got 404. Response: &lt;!DOCTYPE html&gt;
+E         &lt;html lang="en"&gt;
+E         &lt;head&gt;
+E         &lt;meta charset="utf-8"&gt;
+E         &lt;title&gt;Error&lt;/title&gt;
+E         &lt;/head&gt;
+E         &lt;body&gt;
+E         &lt;pre&gt;Cannot POST /api/tasks&lt;/pre&gt;
+E         &lt;/body&gt;
+E         &lt;/html&gt;
+E         
+E       assert 404 == 201
+E        +  where 404 = &lt;Response [404]&gt;.status_code
+
+tests\generated\test_mern-todo-app.py:78: AssertionError</failure></testcase><testcase classname="tests.generated.test_mern-todo-app" name="test_get_task" time="0.009"><failure message="AssertionError: Expected 200 but got 404. Response: &lt;!DOCTYPE html&gt;&#10;  &lt;html lang=&quot;en&quot;&gt;&#10;  &lt;head&gt;&#10;  &lt;meta charset=&quot;utf-8&quot;&gt;&#10;  &lt;title&gt;Error&lt;/title&gt;&#10;  &lt;/head&gt;&#10;  &lt;body&gt;&#10;  &lt;pre&gt;Cannot GET /api/tasks/123&lt;/pre&gt;&#10;  &lt;/body&gt;&#10;  &lt;/html&gt;&#10;  &#10;assert 404 == 200&#10; +  where 404 = &lt;Response [404]&gt;.status_code">base_url = 'http://localhost:8001'
+
+    def test_get_task(base_url):
+        """
+        Test the /getTask endpoint.
+        Assumes it takes a task_id as a query parameter.
+        """
+        task_id = 123 # Example task ID
+        # FIX: Changed URL to use a path parameter for the ID, which is more RESTful.
+        url = f"{base_url}/api/tasks/{task_id}"
+    
+        response = requests.get(url)
+    
+&gt;       assert response.status_code == 200, f"Expected 200 but got {response.status_code}. Response: {response.text}"
+E       AssertionError: Expected 200 but got 404. Response: &lt;!DOCTYPE html&gt;
+E         &lt;html lang="en"&gt;
+E         &lt;head&gt;
+E         &lt;meta charset="utf-8"&gt;
+E         &lt;title&gt;Error&lt;/title&gt;
+E         &lt;/head&gt;
+E         &lt;body&gt;
+E         &lt;pre&gt;Cannot GET /api/tasks/123&lt;/pre&gt;
+E         &lt;/body&gt;
+E         &lt;/html&gt;
+E         
+E       assert 404 == 200
+E        +  where 404 = &lt;Response [404]&gt;.status_code
+
+tests\generated\test_mern-todo-app.py:95: AssertionError</failure></testcase><testcase classname="tests.generated.test_mern-todo-app" name="test_remove_task" time="0.011"><failure message="AssertionError: Expected 200 but got 404. Response: &lt;!DOCTYPE html&gt;&#10;  &lt;html lang=&quot;en&quot;&gt;&#10;  &lt;head&gt;&#10;  &lt;meta charset=&quot;utf-8&quot;&gt;&#10;  &lt;title&gt;Error&lt;/title&gt;&#10;  &lt;/head&gt;&#10;  &lt;body&gt;&#10;  &lt;pre&gt;Cannot DELETE /api/tasks/456&lt;/pre&gt;&#10;  &lt;/body&gt;&#10;  &lt;/html&gt;&#10;  &#10;assert 404 == 200&#10; +  where 404 = &lt;Response [404]&gt;.status_code">base_url = 'http://localhost:8001'
+
+    def test_remove_task(base_url):
+        """
+        Test the /removeTask endpoint.
+        Assumes it takes a task_id as a query parameter.
+        Note: Using GET for a delete operation is unconventional; DELETE is standard.
+        """
+        task_id_to_remove = 456 # Example task ID
+        # FIX: Changed URL to use a path parameter and the standard DELETE HTTP method.
+        url = f"{base_url}/api/tasks/{task_id_to_remove}"
+    
+        response = requests.delete(url)
+    
+&gt;       assert response.status_code == 200, f"Expected 200 but got {response.status_code}. Response: {response.text}"
+E       AssertionError: Expected 200 but got 404. Response: &lt;!DOCTYPE html&gt;
+E         &lt;html lang="en"&gt;
+E         &lt;head&gt;
+E         &lt;meta charset="utf-8"&gt;
+E         &lt;title&gt;Error&lt;/title&gt;
+E         &lt;/head&gt;
+E         &lt;body&gt;
+E         &lt;pre&gt;Cannot DELETE /api/tasks/456&lt;/pre&gt;
+E         &lt;/body&gt;
+E         &lt;/html&gt;
+E         
+E       assert 404 == 200
+E        +  where 404 = &lt;Response [404]&gt;.status_code
+
+tests\generated\test_mern-todo-app.py:114: AssertionError</failure></testcase><testcase classname="tests.generated.test_mern-todo-app" name="test_login" time="0.011"><failure message="AssertionError: Expected 200 but got 404. Response: &lt;!DOCTYPE html&gt;&#10;  &lt;html lang=&quot;en&quot;&gt;&#10;  &lt;head&gt;&#10;  &lt;meta charset=&quot;utf-8&quot;&gt;&#10;  &lt;title&gt;Error&lt;/title&gt;&#10;  &lt;/head&gt;&#10;  &lt;body&gt;&#10;  &lt;pre&gt;Cannot POST /api/users/login&lt;/pre&gt;&#10;  &lt;/body&gt;&#10;  &lt;/html&gt;&#10;  &#10;assert 404 == 200&#10; +  where 404 = &lt;Response [404]&gt;.status_code">base_url = 'http://localhost:8001'
+
+    def test_login(base_url):
+        """
+        Test the /login endpoint.
+        Assumes it requires credentials like email and password.
+        """
+        # FIX: Changed URL to a standard RESTful endpoint for user actions.
+        url = f"{base_url}/api/users/login"
+        payload = {
+            "email": "testuser@example.com",
+            "password": "password123"
+        }
+        headers = {'Content-Type': 'application/json'}
+        response = requests.post(url, data=json.dumps(payload), headers=headers)
+    
+&gt;       assert response.status_code == 200, f"Expected 200 but got {response.status_code}. Response: {response.text}"
+E       AssertionError: Expected 200 but got 404. Response: &lt;!DOCTYPE html&gt;
+E         &lt;html lang="en"&gt;
+E         &lt;head&gt;
+E         &lt;meta charset="utf-8"&gt;
+E         &lt;title&gt;Error&lt;/title&gt;
+E         &lt;/head&gt;
+E         &lt;body&gt;
+E         &lt;pre&gt;Cannot POST /api/users/login&lt;/pre&gt;
+E         &lt;/body&gt;
+E         &lt;/html&gt;
+E         
+E       assert 404 == 200
+E        +  where 404 = &lt;Response [404]&gt;.status_code
+
+tests\generated\test_mern-todo-app.py:134: AssertionError</failure></testcase><testcase classname="tests.generated.test_mern-todo-app" name="test_register" time="0.010"><failure message="AssertionError: Expected 201 but got 404. Response: &lt;!DOCTYPE html&gt;&#10;  &lt;html lang=&quot;en&quot;&gt;&#10;  &lt;head&gt;&#10;  &lt;meta charset=&quot;utf-8&quot;&gt;&#10;  &lt;title&gt;Error&lt;/title&gt;&#10;  &lt;/head&gt;&#10;  &lt;body&gt;&#10;  &lt;pre&gt;Cannot POST /api/users/register&lt;/pre&gt;&#10;  &lt;/body&gt;&#10;  &lt;/html&gt;&#10;  &#10;assert 404 == 201&#10; +  where 404 = &lt;Response [404]&gt;.status_code">base_url = 'http://localhost:8001'
+
+    def test_register(base_url):
+        """
+        Test the /register endpoint.
+        Assumes it requires user details for a new account.
+        """
+        # FIX: Changed URL to a standard RESTful endpoint for user actions.
+        url = f"{base_url}/api/users/register"
+        # Use a unique email/username for each test run if the database persists
+        unique_id = int(time.time())
+        payload = {
+            "username": f"newtestuser_{unique_id}",
+            "email": f"newtestuser_{unique_id}@example.com",
+            "password": "aSecurePassword123"
+        }
+        headers = {'Content-Type': 'application/json'}
+        response = requests.post(url, data=json.dumps(payload), headers=headers)
+    
+        # A successful creation is often indicated by a 201 status code.
+&gt;       assert response.status_code == 201, f"Expected 201 but got {response.status_code}. Response: {response.text}"
+E       AssertionError: Expected 201 but got 404. Response: &lt;!DOCTYPE html&gt;
+E         &lt;html lang="en"&gt;
+E         &lt;head&gt;
+E         &lt;meta charset="utf-8"&gt;
+E         &lt;title&gt;Error&lt;/title&gt;
+E         &lt;/head&gt;
+E         &lt;body&gt;
+E         &lt;pre&gt;Cannot POST /api/users/register&lt;/pre&gt;
+E         &lt;/body&gt;
+E         &lt;/html&gt;
+E         
+E       assert 404 == 201
+E        +  where 404 = &lt;Response [404]&gt;.status_code
+
+tests\generated\test_mern-todo-app.py:159: AssertionError</failure></testcase><testcase classname="tests.generated.test_mern-todo-app" name="test_get_user" time="0.009"><failure message="AssertionError: Expected 200 but got 404. Response: &lt;!DOCTYPE html&gt;&#10;  &lt;html lang=&quot;en&quot;&gt;&#10;  &lt;head&gt;&#10;  &lt;meta charset=&quot;utf-8&quot;&gt;&#10;  &lt;title&gt;Error&lt;/title&gt;&#10;  &lt;/head&gt;&#10;  &lt;body&gt;&#10;  &lt;pre&gt;Cannot GET /api/users/1&lt;/pre&gt;&#10;  &lt;/body&gt;&#10;  &lt;/html&gt;&#10;  &#10;assert 404 == 200&#10; +  where 404 = &lt;Response [404]&gt;.status_code">base_url = 'http://localhost:8001'
+
+    def test_get_user(base_url):
+        """
+        Test the /getuser endpoint.
+        Assumes it takes a user_id as a query parameter.
+        """
+        user_id = 1 # Example user ID
+        # FIX: Changed URL to use a path parameter for the ID, which is more RESTful.
+        url = f"{base_url}/api/users/{user_id}"
+    
+        response = requests.get(url)
+    
+&gt;       assert response.status_code == 200, f"Expected 200 but got {response.status_code}. Response: {response.text}"
+E       AssertionError: Expected 200 but got 404. Response: &lt;!DOCTYPE html&gt;
+E         &lt;html lang="en"&gt;
+E         &lt;head&gt;
+E         &lt;meta charset="utf-8"&gt;
+E         &lt;title&gt;Error&lt;/title&gt;
+E         &lt;/head&gt;
+E         &lt;body&gt;
+E         &lt;pre&gt;Cannot GET /api/users/1&lt;/pre&gt;
+E         &lt;/body&gt;
+E         &lt;/html&gt;
+E         
+E       assert 404 == 200
+E        +  where 404 = &lt;Response [404]&gt;.status_code
+
+tests\generated\test_mern-todo-app.py:177: AssertionError</failure></testcase></testsuite></testsuites>

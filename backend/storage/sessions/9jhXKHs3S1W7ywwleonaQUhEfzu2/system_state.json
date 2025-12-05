@@ -1,0 +1,118 @@
+{
+    "project_name": "ecommerce_api.zip",
+    "upload_path": "storage\\sessions\\9jhXKHs3S1W7ywwleonaQUhEfzu2\\uploads\\ecommerce_api.zip",
+    "endpoints": [
+        {
+            "path": "/cart",
+            "method": "GET",
+            "description": "Detected GET endpoint at /cart",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\9jhXKHs3S1W7ywwleonaQUhEfzu2\\extracted\\ecommerce_api\\ecommerce_api\\server.js"
+        },
+        {
+            "path": "/cart",
+            "method": "POST",
+            "description": "Detected POST endpoint at /cart",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\9jhXKHs3S1W7ywwleonaQUhEfzu2\\extracted\\ecommerce_api\\ecommerce_api\\server.js"
+        },
+        {
+            "path": "/cart/:productId",
+            "method": "DELETE",
+            "description": "Detected DELETE endpoint at /cart/:productId",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\9jhXKHs3S1W7ywwleonaQUhEfzu2\\extracted\\ecommerce_api\\ecommerce_api\\server.js"
+        },
+        {
+            "path": "/checkout",
+            "method": "POST",
+            "description": "Detected POST endpoint at /checkout",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\9jhXKHs3S1W7ywwleonaQUhEfzu2\\extracted\\ecommerce_api\\ecommerce_api\\server.js"
+        },
+        {
+            "path": "/",
+            "method": "POST",
+            "description": "Detected POST endpoint at /",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\9jhXKHs3S1W7ywwleonaQUhEfzu2\\extracted\\ecommerce_api\\ecommerce_api\\routes\\orders.js"
+        },
+        {
+            "path": "/:id",
+            "method": "GET",
+            "description": "Detected GET endpoint at /:id",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\9jhXKHs3S1W7ywwleonaQUhEfzu2\\extracted\\ecommerce_api\\ecommerce_api\\routes\\orders.js"
+        },
+        {
+            "path": "/",
+            "method": "GET",
+            "description": "Detected GET endpoint at /",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\9jhXKHs3S1W7ywwleonaQUhEfzu2\\extracted\\ecommerce_api\\ecommerce_api\\routes\\products.js"
+        },
+        {
+            "path": "/:id",
+            "method": "GET",
+            "description": "Detected GET endpoint at /:id",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\9jhXKHs3S1W7ywwleonaQUhEfzu2\\extracted\\ecommerce_api\\ecommerce_api\\routes\\products.js"
+        },
+        {
+            "path": "/",
+            "method": "POST",
+            "description": "Detected POST endpoint at /",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\9jhXKHs3S1W7ywwleonaQUhEfzu2\\extracted\\ecommerce_api\\ecommerce_api\\routes\\products.js"
+        },
+        {
+            "path": "/:id",
+            "method": "DELETE",
+            "description": "Detected DELETE endpoint at /:id",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\9jhXKHs3S1W7ywwleonaQUhEfzu2\\extracted\\ecommerce_api\\ecommerce_api\\routes\\products.js"
+        },
+        {
+            "path": "/:productId",
+            "method": "GET",
+            "description": "Detected GET endpoint at /:productId",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\9jhXKHs3S1W7ywwleonaQUhEfzu2\\extracted\\ecommerce_api\\ecommerce_api\\routes\\reviews.js"
+        },
+        {
+            "path": "/:productId",
+            "method": "POST",
+            "description": "Detected POST endpoint at /:productId",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\9jhXKHs3S1W7ywwleonaQUhEfzu2\\extracted\\ecommerce_api\\ecommerce_api\\routes\\reviews.js"
+        },
+        {
+            "path": "/register",
+            "method": "POST",
+            "description": "Detected POST endpoint at /register",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\9jhXKHs3S1W7ywwleonaQUhEfzu2\\extracted\\ecommerce_api\\ecommerce_api\\routes\\users.js"
+        },
+        {
+            "path": "/login",
+            "method": "POST",
+            "description": "Detected POST endpoint at /login",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\9jhXKHs3S1W7ywwleonaQUhEfzu2\\extracted\\ecommerce_api\\ecommerce_api\\routes\\users.js"
+        }
+    ],
+    "test_file": "C:\\Users\\Satish\\Desktop\\Major project\\API_TESTING\\backend\\tests/generated\\test_ecommerce_api.py",
+    "latest_results": {
+        "status": "success",
+        "summary": {
+            "passed": 12,
+            "failed": 0,
+            "error": 0,
+            "total": 12
+        },
+        "reward": 12.0,
+        "logs": "============================= test session starts =============================\nplatform win32 -- Python 3.10.0, pytest-9.0.1, pluggy-1.6.0 -- C:\\Users\\Satish\\AppData\\Local\\Programs\\Python\\Python310\\python.exe\ncachedir: .pytest_cache\nrootdir: C:\\Users\\Satish\\Desktop\\Major project\\API_TESTING\\backend\nplugins: anyio-4.6.2.post1, Faker-37.12.0\ncollecting ... collected 12 items\n\ntests/generated/test_ecommerce_api.py::test_get_cart PASSED              [  8%]\ntests/generated/test_ecommerce_api.py::test_add_to_cart PASSED           [ 16%]\ntests/generated/test_ecommerce_api.py::test_remove_from_cart PASSED      [ 25%]\ntests/generated/test_ecommerce_api.py::test_checkout PASSED              [ 33%]\ntests/generated/test_ecommerce_api.py::test_create_resource PASSED       [ 41%]\ntests/generated/test_ecommerce_api.py::test_get_resource_by_id PASSED    [ 50%]\ntests/generated/test_ecommerce_api.py::test_get_all_resources PASSED     [ 58%]\ntests/generated/test_ecommerce_api.py::test_delete_resource_by_id PASSED [ 66%]\ntests/generated/test_ecommerce_api.py::test_get_product_by_id PASSED     [ 75%]\ntests/generated/test_ecommerce_api.py::test_post_action_on_product PASSED [ 83%]\ntests/generated/test_ecommerce_api.py::test_register PASSED              [ 91%]\ntests/generated/test_ecommerce_api.py::test_login PASSED                 [100%]\n\n=================================== PASSES ====================================\n- generated xml file: C:\\Users\\Satish\\Desktop\\Major project\\API_TESTING\\backend\\storage\\results\\report.xml -\n============================= 12 passed in 1.17s ==============================\n",
+        "test_file": "C:\\Users\\Satish\\Desktop\\Major project\\API_TESTING\\backend\\tests/generated\\test_ecommerce_api.py",
+        "failures": []
+    }
+}

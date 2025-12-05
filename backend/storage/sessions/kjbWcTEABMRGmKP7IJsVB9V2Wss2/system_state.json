@@ -1,0 +1,64 @@
+{
+    "project_name": "mern-todo-app.zip",
+    "upload_path": "storage\\sessions\\kjbWcTEABMRGmKP7IJsVB9V2Wss2\\uploads\\mern-todo-app.zip",
+    "endpoints": [
+        {
+            "path": "/forgotPassword",
+            "method": "POST",
+            "description": "Detected POST endpoint at /forgotPassword",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\kjbWcTEABMRGmKP7IJsVB9V2Wss2\\extracted\\mern-todo-app\\backend\\routes\\forgotPassword.js"
+        },
+        {
+            "path": "/resetPassword",
+            "method": "POST",
+            "description": "Detected POST endpoint at /resetPassword",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\kjbWcTEABMRGmKP7IJsVB9V2Wss2\\extracted\\mern-todo-app\\backend\\routes\\forgotPassword.js"
+        },
+        {
+            "path": "/addTask",
+            "method": "POST",
+            "description": "Detected POST endpoint at /addTask",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\kjbWcTEABMRGmKP7IJsVB9V2Wss2\\extracted\\mern-todo-app\\backend\\routes\\taskRoute.js"
+        },
+        {
+            "path": "/getTask",
+            "method": "GET",
+            "description": "Detected GET endpoint at /getTask",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\kjbWcTEABMRGmKP7IJsVB9V2Wss2\\extracted\\mern-todo-app\\backend\\routes\\taskRoute.js"
+        },
+        {
+            "path": "/removeTask",
+            "method": "GET",
+            "description": "Detected GET endpoint at /removeTask",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\kjbWcTEABMRGmKP7IJsVB9V2Wss2\\extracted\\mern-todo-app\\backend\\routes\\taskRoute.js"
+        },
+        {
+            "path": "/login",
+            "method": "POST",
+            "description": "Detected POST endpoint at /login",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\kjbWcTEABMRGmKP7IJsVB9V2Wss2\\extracted\\mern-todo-app\\backend\\routes\\userRoute.js"
+        },
+        {
+            "path": "/register",
+            "method": "POST",
+            "description": "Detected POST endpoint at /register",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\kjbWcTEABMRGmKP7IJsVB9V2Wss2\\extracted\\mern-todo-app\\backend\\routes\\userRoute.js"
+        },
+        {
+            "path": "/getuser",
+            "method": "GET",
+            "description": "Detected GET endpoint at /getuser",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\kjbWcTEABMRGmKP7IJsVB9V2Wss2\\extracted\\mern-todo-app\\backend\\routes\\userRoute.js"
+        }
+    ],
+    "test_file": "",
+    "latest_results": null
+}

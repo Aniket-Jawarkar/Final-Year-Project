@@ -1,0 +1,161 @@
+{
+    "project_name": "ecommerce_api.zip",
+    "upload_path": "storage\\sessions\\priA2jpx6CM9yf7anRyk7Gd57oz1\\uploads\\ecommerce_api.zip",
+    "endpoints": [
+        {
+            "path": "/cart",
+            "method": "GET",
+            "description": "Detected GET endpoint at /cart",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\priA2jpx6CM9yf7anRyk7Gd57oz1\\extracted\\ecommerce_api\\ecommerce_api\\server.js"
+        },
+        {
+            "path": "/cart",
+            "method": "POST",
+            "description": "Detected POST endpoint at /cart",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\priA2jpx6CM9yf7anRyk7Gd57oz1\\extracted\\ecommerce_api\\ecommerce_api\\server.js"
+        },
+        {
+            "path": "/cart/:productId",
+            "method": "DELETE",
+            "description": "Detected DELETE endpoint at /cart/:productId",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\priA2jpx6CM9yf7anRyk7Gd57oz1\\extracted\\ecommerce_api\\ecommerce_api\\server.js"
+        },
+        {
+            "path": "/checkout",
+            "method": "POST",
+            "description": "Detected POST endpoint at /checkout",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\priA2jpx6CM9yf7anRyk7Gd57oz1\\extracted\\ecommerce_api\\ecommerce_api\\server.js"
+        },
+        {
+            "path": "/",
+            "method": "POST",
+            "description": "Detected POST endpoint at /",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\priA2jpx6CM9yf7anRyk7Gd57oz1\\extracted\\ecommerce_api\\ecommerce_api\\routes\\orders.js"
+        },
+        {
+            "path": "/:id",
+            "method": "GET",
+            "description": "Detected GET endpoint at /:id",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\priA2jpx6CM9yf7anRyk7Gd57oz1\\extracted\\ecommerce_api\\ecommerce_api\\routes\\orders.js"
+        },
+        {
+            "path": "/",
+            "method": "GET",
+            "description": "Detected GET endpoint at /",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\priA2jpx6CM9yf7anRyk7Gd57oz1\\extracted\\ecommerce_api\\ecommerce_api\\routes\\products.js"
+        },
+        {
+            "path": "/:id",
+            "method": "GET",
+            "description": "Detected GET endpoint at /:id",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\priA2jpx6CM9yf7anRyk7Gd57oz1\\extracted\\ecommerce_api\\ecommerce_api\\routes\\products.js"
+        },
+        {
+            "path": "/",
+            "method": "POST",
+            "description": "Detected POST endpoint at /",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\priA2jpx6CM9yf7anRyk7Gd57oz1\\extracted\\ecommerce_api\\ecommerce_api\\routes\\products.js"
+        },
+        {
+            "path": "/:id",
+            "method": "DELETE",
+            "description": "Detected DELETE endpoint at /:id",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\priA2jpx6CM9yf7anRyk7Gd57oz1\\extracted\\ecommerce_api\\ecommerce_api\\routes\\products.js"
+        },
+        {
+            "path": "/:productId",
+            "method": "GET",
+            "description": "Detected GET endpoint at /:productId",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\priA2jpx6CM9yf7anRyk7Gd57oz1\\extracted\\ecommerce_api\\ecommerce_api\\routes\\reviews.js"
+        },
+        {
+            "path": "/:productId",
+            "method": "POST",
+            "description": "Detected POST endpoint at /:productId",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\priA2jpx6CM9yf7anRyk7Gd57oz1\\extracted\\ecommerce_api\\ecommerce_api\\routes\\reviews.js"
+        },
+        {
+            "path": "/register",
+            "method": "POST",
+            "description": "Detected POST endpoint at /register",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\priA2jpx6CM9yf7anRyk7Gd57oz1\\extracted\\ecommerce_api\\ecommerce_api\\routes\\users.js"
+        },
+        {
+            "path": "/login",
+            "method": "POST",
+            "description": "Detected POST endpoint at /login",
+            "payload_schema": {},
+            "source_file": "storage\\sessions\\priA2jpx6CM9yf7anRyk7Gd57oz1\\extracted\\ecommerce_api\\ecommerce_api\\routes\\users.js"
+        }
+    ],
+    "test_file": "C:\\Users\\Satish\\Desktop\\Major project\\API_TESTING\\backend\\tests/generated\\test_ecommerce_api.py",
+    "latest_results": {
+        "status": "failure",
+        "summary": {
+            "passed": 1,
+            "failed": 2,
+            "error": 4,
+            "total": 7
+        },
+        "reward": -10.0,
+        "logs": "============================= test session starts =============================\nplatform win32 -- Python 3.10.0, pytest-9.0.1, pluggy-1.6.0 -- C:\\Users\\Satish\\AppData\\Local\\Programs\\Python\\Python310\\python.exe\ncachedir: .pytest_cache\nrootdir: C:\\Users\\Satish\\Desktop\\Major project\\API_TESTING\\backend\nplugins: anyio-4.6.2.post1, Faker-37.12.0\ncollecting ... collected 7 items\n\ntests/generated/test_ecommerce_api.py::test_register_user FAILED         [ 14%]\ntests/generated/test_ecommerce_api.py::test_login_user FAILED            [ 28%]\ntests/generated/test_ecommerce_api.py::test_get_all_products PASSED      [ 42%]\ntests/generated/test_ecommerce_api.py::test_product_lifecycle ERROR      [ 57%]\ntests/generated/test_ecommerce_api.py::test_cart_workflow ERROR          [ 71%]\ntests/generated/test_ecommerce_api.py::test_checkout ERROR               [ 85%]\ntests/generated/test_ecommerce_api.py::test_product_review_workflow ERROR [100%]\n\n=================================== ERRORS ====================================\n__________________ ERROR at setup of test_product_lifecycle ___________________\n\nbase_url = 'http://localhost:8001'\nunique_user_credentials = {'email': 'test_4862b2d3-c55b-44a9-b042-0542d1fe5b43@example.com', 'password': 'strongpassword123', 'username': 'testuser_4862b2d3-c55b-44a9-b042-0542d1fe5b43'}\n\n    @pytest.fixture\n    def auth_token(base_url, unique_user_credentials):\n        \"\"\"\n        Registers a new unique user and logs them in to get an authentication token.\n        This ensures that tests requiring authentication are independent.\n        \"\"\"\n        # Register a new user for each test run\n        reg_payload = unique_user_credentials\n        reg_response = requests.post(f\"{base_url}/auth/register\", json=reg_payload)\n>       assert reg_response.status_code in [200, 201], f\"Failed to register user. Response: {reg_response.text}\"\nE       AssertionError: Failed to register user. Response: <!DOCTYPE html>\nE         <html lang=\"en\">\nE         <head>\nE         <meta charset=\"utf-8\">\nE         <title>Error</title>\nE         </head>\nE         <body>\nE         <pre>Cannot POST /auth/register</pre>\nE         </body>\nE         </html>\nE         \nE       assert 404 in [200, 201]\nE        +  where 404 = <Response [404]>.status_code\n\ntests\\generated\\test_ecommerce_api.py:40: AssertionError\n____________________ ERROR at setup of test_cart_workflow _____________________\n\nbase_url = 'http://localhost:8001'\nunique_user_credentials = {'email': 'test_596a0c59-7e1e-46f3-ac55-5157a172f9cb@example.com', 'password': 'strongpassword123', 'username': 'testuser_596a0c59-7e1e-46f3-ac55-5157a172f9cb'}\n\n    @pytest.fixture\n    def auth_token(base_url, unique_user_credentials):\n        \"\"\"\n        Registers a new unique user and logs them in to get an authentication token.\n        This ensures that tests requiring authentication are independent.\n        \"\"\"\n        # Register a new user for each test run\n        reg_payload = unique_user_credentials\n        reg_response = requests.post(f\"{base_url}/auth/register\", json=reg_payload)\n>       assert reg_response.status_code in [200, 201], f\"Failed to register user. Response: {reg_response.text}\"\nE       AssertionError: Failed to register user. Response: <!DOCTYPE html>\nE         <html lang=\"en\">\nE         <head>\nE         <meta charset=\"utf-8\">\nE         <title>Error</title>\nE         </head>\nE         <body>\nE         <pre>Cannot POST /auth/register</pre>\nE         </body>\nE         </html>\nE         \nE       assert 404 in [200, 201]\nE        +  where 404 = <Response [404]>.status_code\n\ntests\\generated\\test_ecommerce_api.py:40: AssertionError\n_______________________ ERROR at setup of test_checkout _______________________\n\nbase_url = 'http://localhost:8001'\nunique_user_credentials = {'email': 'test_d46f30e0-0752-4c60-8845-d6cac0132426@example.com', 'password': 'strongpassword123', 'username': 'testuser_d46f30e0-0752-4c60-8845-d6cac0132426'}\n\n    @pytest.fixture\n    def auth_token(base_url, unique_user_credentials):\n        \"\"\"\n        Registers a new unique user and logs them in to get an authentication token.\n        This ensures that tests requiring authentication are independent.\n        \"\"\"\n        # Register a new user for each test run\n        reg_payload = unique_user_credentials\n        reg_response = requests.post(f\"{base_url}/auth/register\", json=reg_payload)\n>       assert reg_response.status_code in [200, 201], f\"Failed to register user. Response: {reg_response.text}\"\nE       AssertionError: Failed to register user. Response: <!DOCTYPE html>\nE         <html lang=\"en\">\nE         <head>\nE         <meta charset=\"utf-8\">\nE         <title>Error</title>\nE         </head>\nE         <body>\nE         <pre>Cannot POST /auth/register</pre>\nE         </body>\nE         </html>\nE         \nE       assert 404 in [200, 201]\nE        +  where 404 = <Response [404]>.status_code\n\ntests\\generated\\test_ecommerce_api.py:40: AssertionError\n_______________ ERROR at setup of test_product_review_workflow ________________\n\nbase_url = 'http://localhost:8001'\nunique_user_credentials = {'email': 'test_2437a436-5b49-4caa-859a-121c9e983672@example.com', 'password': 'strongpassword123', 'username': 'testuser_2437a436-5b49-4caa-859a-121c9e983672'}\n\n    @pytest.fixture\n    def auth_token(base_url, unique_user_credentials):\n        \"\"\"\n        Registers a new unique user and logs them in to get an authentication token.\n        This ensures that tests requiring authentication are independent.\n        \"\"\"\n        # Register a new user for each test run\n        reg_payload = unique_user_credentials\n        reg_response = requests.post(f\"{base_url}/auth/register\", json=reg_payload)\n>       assert reg_response.status_code in [200, 201], f\"Failed to register user. Response: {reg_response.text}\"\nE       AssertionError: Failed to register user. Response: <!DOCTYPE html>\nE         <html lang=\"en\">\nE         <head>\nE         <meta charset=\"utf-8\">\nE         <title>Error</title>\nE         </head>\nE         <body>\nE         <pre>Cannot POST /auth/register</pre>\nE         </body>\nE         </html>\nE         \nE       assert 404 in [200, 201]\nE        +  where 404 = <Response [404]>.status_code\n\ntests\\generated\\test_ecommerce_api.py:40: AssertionError\n================================== FAILURES ===================================\n_____________________________ test_register_user ______________________________\n\nbase_url = 'http://localhost:8001'\nunique_user_credentials = {'email': 'test_8b675251-c387-423c-bdf7-47fbe1fa9b93@example.com', 'password': 'strongpassword123', 'username': 'testuser_8b675251-c387-423c-bdf7-47fbe1fa9b93'}\n\n    def test_register_user(base_url, unique_user_credentials):\n        \"\"\"\n        Tests user registration.\n        Endpoint: POST /register\n        \"\"\"\n        payload = unique_user_credentials\n        response = requests.post(f\"{base_url}/auth/register\", json=payload)\n>       assert response.status_code == 201, f\"Expected 201 but got {response.status_code}. Response: {response.text}\"\nE       AssertionError: Expected 201 but got 404. Response: <!DOCTYPE html>\nE         <html lang=\"en\">\nE         <head>\nE         <meta charset=\"utf-8\">\nE         <title>Error</title>\nE         </head>\nE         <body>\nE         <pre>Cannot POST /auth/register</pre>\nE         </body>\nE         </html>\nE         \nE       assert 404 == 201\nE        +  where 404 = <Response [404]>.status_code\n\ntests\\generated\\test_ecommerce_api.py:64: AssertionError\n_______________________________ test_login_user _______________________________\n\nbase_url = 'http://localhost:8001'\nunique_user_credentials = {'email': 'test_a27db3d5-1bfe-4461-b7e4-59e41d8e2ae8@example.com', 'password': 'strongpassword123', 'username': 'testuser_a27db3d5-1bfe-4461-b7e4-59e41d8e2ae8'}\n\n    def test_login_user(base_url, unique_user_credentials):\n        \"\"\"\n        Tests user login after registration.\n        Endpoint: POST /login\n        \"\"\"\n        # First, register the user\n        requests.post(f\"{base_url}/auth/register\", json=unique_user_credentials)\n    \n        # Now, attempt to log in\n        payload = {\n            \"username\": unique_user_credentials[\"username\"],\n            \"password\": unique_user_credentials[\"password\"]\n        }\n        response = requests.post(f\"{base_url}/auth/login\", json=payload)\n>       assert response.status_code == 200, f\"Expected 200 but got {response.status_code}. Response: {response.text}\"\nE       AssertionError: Expected 200 but got 404. Response: <!DOCTYPE html>\nE         <html lang=\"en\">\nE         <head>\nE         <meta charset=\"utf-8\">\nE         <title>Error</title>\nE         </head>\nE         <body>\nE         <pre>Cannot POST /auth/login</pre>\nE         </body>\nE         </html>\nE         \nE       assert 404 == 200\nE        +  where 404 = <Response [404]>.status_code\n\ntests\\generated\\test_ecommerce_api.py:84: AssertionError\n=================================== PASSES ====================================\n- generated xml file: C:\\Users\\Satish\\Desktop\\Major project\\API_TESTING\\backend\\storage\\results\\report.xml -\n==================== 2 failed, 1 passed, 4 errors in 1.43s ====================\n",
+        "test_file": "C:\\Users\\Satish\\Desktop\\Major project\\API_TESTING\\backend\\tests/generated\\test_ecommerce_api.py",
+        "failures": [
+            {
+                "nodeid": "test_register_user",
+                "file": null,
+                "line": null,
+                "message": "AssertionError: Expected 201 but got 404. Response: <!DOCTYPE html>\n  <html lang=\"en\">\n  <head>\n  <meta charset=\"utf-8\">\n  <title>Error</title>\n  </head>\n  <body>\n  <pre>Cannot POST /auth/register</pre>\n  </body>\n  </html>\n  \nassert 404 == 201\n +  where 404 = <Response [404]>.status_code",
+                "longrepr": "base_url = 'http://localhost:8001'\nunique_user_credentials = {'email': 'test_8b675251-c387-423c-bdf7-47fbe1fa9b93@example.com', 'password': 'strongpassword123', 'username': 'testuser_8b675251-c387-423c-bdf7-47fbe1fa9b93'}\n\n    def test_register_user(base_url, unique_user_credentials):\n        \"\"\"\n        Tests user registration.\n        Endpoint: POST /register\n        \"\"\"\n        payload = unique_user_credentials\n        response = requests.post(f\"{base_url}/auth/register\", json=payload)\n>       assert response.status_code == 201, f\"Expected 201 but got {response.status_code}. Response: {response.text}\"\nE       AssertionError: Expected 201 but got 404. Response: <!DOCTYPE html>\nE         <html lang=\"en\">\nE         <head>\nE         <meta charset=\"utf-8\">\nE         <title>Error</title>\nE         </head>\nE         <body>\nE         <pre>Cannot POST /auth/register</pre>\nE         </body>\nE         </html>\nE         \nE       assert 404 == 201\nE        +  where 404 = <Response [404]>.status_code\n\ntests\\generated\\test_ecommerce_api.py:64: AssertionError"
+            },
+            {
+                "nodeid": "test_login_user",
+                "file": null,
+                "line": null,
+                "message": "AssertionError: Expected 200 but got 404. Response: <!DOCTYPE html>\n  <html lang=\"en\">\n  <head>\n  <meta charset=\"utf-8\">\n  <title>Error</title>\n  </head>\n  <body>\n  <pre>Cannot POST /auth/login</pre>\n  </body>\n  </html>\n  \nassert 404 == 200\n +  where 404 = <Response [404]>.status_code",
+                "longrepr": "base_url = 'http://localhost:8001'\nunique_user_credentials = {'email': 'test_a27db3d5-1bfe-4461-b7e4-59e41d8e2ae8@example.com', 'password': 'strongpassword123', 'username': 'testuser_a27db3d5-1bfe-4461-b7e4-59e41d8e2ae8'}\n\n    def test_login_user(base_url, unique_user_credentials):\n        \"\"\"\n        Tests user login after registration.\n        Endpoint: POST /login\n        \"\"\"\n        # First, register the user\n        requests.post(f\"{base_url}/auth/register\", json=unique_user_credentials)\n    \n        # Now, attempt to log in\n        payload = {\n            \"username\": unique_user_credentials[\"username\"],\n            \"password\": unique_user_credentials[\"password\"]\n        }\n        response = requests.post(f\"{base_url}/auth/login\", json=payload)\n>       assert response.status_code == 200, f\"Expected 200 but got {response.status_code}. Response: {response.text}\"\nE       AssertionError: Expected 200 but got 404. Response: <!DOCTYPE html>\nE         <html lang=\"en\">\nE         <head>\nE         <meta charset=\"utf-8\">\nE         <title>Error</title>\nE         </head>\nE         <body>\nE         <pre>Cannot POST /auth/login</pre>\nE         </body>\nE         </html>\nE         \nE       assert 404 == 200\nE        +  where 404 = <Response [404]>.status_code\n\ntests\\generated\\test_ecommerce_api.py:84: AssertionError"
+            },
+            {
+                "nodeid": "test_product_lifecycle",
+                "file": null,
+                "line": null,
+                "message": "failed on setup with \"AssertionError: Failed to register user. Response: <!DOCTYPE html>\n  <html lang=\"en\">\n  <head>\n  <meta charset=\"utf-8\">\n  <title>Error</title>\n  </head>\n  <body>\n  <pre>Cannot POST /auth/register</pre>\n  </body>\n  </html>\n  \nassert 404 in [200, 201]\n +  where 404 = <Response [404]>.status_code\"",
+                "longrepr": "base_url = 'http://localhost:8001'\nunique_user_credentials = {'email': 'test_4862b2d3-c55b-44a9-b042-0542d1fe5b43@example.com', 'password': 'strongpassword123', 'username': 'testuser_4862b2d3-c55b-44a9-b042-0542d1fe5b43'}\n\n    @pytest.fixture\n    def auth_token(base_url, unique_user_credentials):\n        \"\"\"\n        Registers a new unique user and logs them in to get an authentication token.\n        This ensures that tests requiring authentication are independent.\n        \"\"\"\n        # Register a new user for each test run\n        reg_payload = unique_user_credentials\n        reg_response = requests.post(f\"{base_url}/auth/register\", json=reg_payload)\n>       assert reg_response.status_code in [200, 201], f\"Failed to register user. Response: {reg_response.text}\"\nE       AssertionError: Failed to register user. Response: <!DOCTYPE html>\nE         <html lang=\"en\">\nE         <head>\nE         <meta charset=\"utf-8\">\nE         <title>Error</title>\nE         </head>\nE         <body>\nE         <pre>Cannot POST /auth/register</pre>\nE         </body>\nE         </html>\nE         \nE       assert 404 in [200, 201]\nE        +  where 404 = <Response [404]>.status_code\n\ntests\\generated\\test_ecommerce_api.py:40: AssertionError"
+            },
+            {
+                "nodeid": "test_cart_workflow",
+                "file": null,
+                "line": null,
+                "message": "failed on setup with \"AssertionError: Failed to register user. Response: <!DOCTYPE html>\n  <html lang=\"en\">\n  <head>\n  <meta charset=\"utf-8\">\n  <title>Error</title>\n  </head>\n  <body>\n  <pre>Cannot POST /auth/register</pre>\n  </body>\n  </html>\n  \nassert 404 in [200, 201]\n +  where 404 = <Response [404]>.status_code\"",
+                "longrepr": "base_url = 'http://localhost:8001'\nunique_user_credentials = {'email': 'test_596a0c59-7e1e-46f3-ac55-5157a172f9cb@example.com', 'password': 'strongpassword123', 'username': 'testuser_596a0c59-7e1e-46f3-ac55-5157a172f9cb'}\n\n    @pytest.fixture\n    def auth_token(base_url, unique_user_credentials):\n        \"\"\"\n        Registers a new unique user and logs them in to get an authentication token.\n        This ensures that tests requiring authentication are independent.\n        \"\"\"\n        # Register a new user for each test run\n        reg_payload = unique_user_credentials\n        reg_response = requests.post(f\"{base_url}/auth/register\", json=reg_payload)\n>       assert reg_response.status_code in [200, 201], f\"Failed to register user. Response: {reg_response.text}\"\nE       AssertionError: Failed to register user. Response: <!DOCTYPE html>\nE         <html lang=\"en\">\nE         <head>\nE         <meta charset=\"utf-8\">\nE         <title>Error</title>\nE         </head>\nE         <body>\nE         <pre>Cannot POST /auth/register</pre>\nE         </body>\nE         </html>\nE         \nE       assert 404 in [200, 201]\nE        +  where 404 = <Response [404]>.status_code\n\ntests\\generated\\test_ecommerce_api.py:40: AssertionError"
+            },
+            {
+                "nodeid": "test_checkout",
+                "file": null,
+                "line": null,
+                "message": "failed on setup with \"AssertionError: Failed to register user. Response: <!DOCTYPE html>\n  <html lang=\"en\">\n  <head>\n  <meta charset=\"utf-8\">\n  <title>Error</title>\n  </head>\n  <body>\n  <pre>Cannot POST /auth/register</pre>\n  </body>\n  </html>\n  \nassert 404 in [200, 201]\n +  where 404 = <Response [404]>.status_code\"",
+                "longrepr": "base_url = 'http://localhost:8001'\nunique_user_credentials = {'email': 'test_d46f30e0-0752-4c60-8845-d6cac0132426@example.com', 'password': 'strongpassword123', 'username': 'testuser_d46f30e0-0752-4c60-8845-d6cac0132426'}\n\n    @pytest.fixture\n    def auth_token(base_url, unique_user_credentials):\n        \"\"\"\n        Registers a new unique user and logs them in to get an authentication token.\n        This ensures that tests requiring authentication are independent.\n        \"\"\"\n        # Register a new user for each test run\n        reg_payload = unique_user_credentials\n        reg_response = requests.post(f\"{base_url}/auth/register\", json=reg_payload)\n>       assert reg_response.status_code in [200, 201], f\"Failed to register user. Response: {reg_response.text}\"\nE       AssertionError: Failed to register user. Response: <!DOCTYPE html>\nE         <html lang=\"en\">\nE         <head>\nE         <meta charset=\"utf-8\">\nE         <title>Error</title>\nE         </head>\nE         <body>\nE         <pre>Cannot POST /auth/register</pre>\nE         </body>\nE         </html>\nE         \nE       assert 404 in [200, 201]\nE        +  where 404 = <Response [404]>.status_code\n\ntests\\generated\\test_ecommerce_api.py:40: AssertionError"
+            },
+            {
+                "nodeid": "test_product_review_workflow",
+                "file": null,
+                "line": null,
+                "message": "failed on setup with \"AssertionError: Failed to register user. Response: <!DOCTYPE html>\n  <html lang=\"en\">\n  <head>\n  <meta charset=\"utf-8\">\n  <title>Error</title>\n  </head>\n  <body>\n  <pre>Cannot POST /auth/register</pre>\n  </body>\n  </html>\n  \nassert 404 in [200, 201]\n +  where 404 = <Response [404]>.status_code\"",
+                "longrepr": "base_url = 'http://localhost:8001'\nunique_user_credentials = {'email': 'test_2437a436-5b49-4caa-859a-121c9e983672@example.com', 'password': 'strongpassword123', 'username': 'testuser_2437a436-5b49-4caa-859a-121c9e983672'}\n\n    @pytest.fixture\n    def auth_token(base_url, unique_user_credentials):\n        \"\"\"\n        Registers a new unique user and logs them in to get an authentication token.\n        This ensures that tests requiring authentication are independent.\n        \"\"\"\n        # Register a new user for each test run\n        reg_payload = unique_user_credentials\n        reg_response = requests.post(f\"{base_url}/auth/register\", json=reg_payload)\n>       assert reg_response.status_code in [200, 201], f\"Failed to register user. Response: {reg_response.text}\"\nE       AssertionError: Failed to register user. Response: <!DOCTYPE html>\nE         <html lang=\"en\">\nE         <head>\nE         <meta charset=\"utf-8\">\nE         <title>Error</title>\nE         </head>\nE         <body>\nE         <pre>Cannot POST /auth/register</pre>\nE         </body>\nE         </html>\nE         \nE       assert 404 in [200, 201]\nE        +  where 404 = <Response [404]>.status_code\n\ntests\\generated\\test_ecommerce_api.py:40: AssertionError"
+            }
+        ]
+    }
+}

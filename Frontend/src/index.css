@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+    --background: #0a0a0f;
+    --foreground: #ffffff;
+    --card: #13131f;
+    --card-foreground: #ffffff;
+    --popover: #13131f;
+    --popover-foreground: #ffffff;
+    --primary: #8b5cf6;
+    --primary-foreground: #ffffff;
+    --secondary: #1f1f2e;
+    --secondary-foreground: #ffffff;
+    --muted: #1f1f2e;
+    --muted-foreground: #a1a1aa;
+    --accent: #2d2d3d;
+    --accent-foreground: #ffffff;
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+    --border: #2d2d3d;
+    --input: #2d2d3d;
+    --ring: #8b5cf6;
+    --radius: 0.75rem;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--muted-foreground);
+}
+
+/* Glassmorphism Utilities */
+.glass {
+    background: rgba(19, 19, 31, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-card {
+    background: linear-gradient(145deg, rgba(19, 19, 31, 0.9) 0%, rgba(19, 19, 31, 0.6) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
