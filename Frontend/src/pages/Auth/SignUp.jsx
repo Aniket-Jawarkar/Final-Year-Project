@@ -85,7 +85,7 @@ const SignUp = () => {
                                         value={formData.fullName}
                                         onChange={handleChange}
                                         className="w-full pl-10 pr-4 py-3 bg-gray-900/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 text-white placeholder-gray-500 transition-all outline-none"
-                                        placeholder="John Doe"
+                                        placeholder="Enter your name"
                                         required
                                     />
                                 </div>
